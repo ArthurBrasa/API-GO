@@ -14,7 +14,7 @@ func List(w http.ResponseWriter, r *http.Request) {
 		log.Printf("Erro ao obter registro: %v", err)
 	}
 
-	w.Header().Add("Content-Type", "aplication/json")
+	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(todos)
 
 }

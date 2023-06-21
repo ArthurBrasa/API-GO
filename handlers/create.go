@@ -34,7 +34,7 @@ func Create(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	w.Header().Add("Content-Type", "aplication/json")
+	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(resp)
 
 }

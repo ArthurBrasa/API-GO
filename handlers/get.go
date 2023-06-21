@@ -27,6 +27,6 @@ func Get(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	w.Header().Add("Content-Type", "aplication/json")
+	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(todo)
 }

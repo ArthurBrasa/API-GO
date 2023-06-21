@@ -36,7 +36,6 @@ func Delete(w http.ResponseWriter, r *http.Request) {
 		"Message": "Registro removido com sucesso!",
 	}
 
-	w.Header().Add("Content-Type", "aplication/json")
+	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(resp)
-	return
 }
