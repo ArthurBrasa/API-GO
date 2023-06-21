@@ -11,7 +11,7 @@ import (
 func List(w http.ResponseWriter, r *http.Request) {
 	todos, err := models.GetALL()
 	if err != nil {
-		log.Print("Erro ao obter registro: %v", err)
+		log.Printf("Erro ao obter registro: %v", err)
 	}
 
 	w.Header().Add("Content-Type", "aplication/json")
