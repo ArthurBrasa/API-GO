@@ -6,7 +6,7 @@ import (
 
 	"github.com/ArthurBrasa/API-GO/configs"
 	"github.com/ArthurBrasa/API-GO/handlers"
-	"github.com/go-chi/v5"
+	"github.com/go-chi/chi/v5"
 )
 
 func main() {
@@ -14,7 +14,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-
 	r := chi.NewRouter()
 	r.Post("/", handlers.Create)
 	r.Put("/{id}", handlers.Update)

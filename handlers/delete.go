@@ -7,6 +7,7 @@ import (
 	"strconv"
 
 	"github.com/ArthurBrasa/API-GO/models"
+	"github.com/go-chi/chi/v5"
 )
 
 func Delete(w http.ResponseWriter, r *http.Request) {
@@ -37,4 +38,5 @@ func Delete(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Add("Content-Type", "aplication/json")
 	json.NewEncoder(w).Encode(resp)
+	return
 }
