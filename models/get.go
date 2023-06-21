@@ -2,7 +2,7 @@ package models
 
 import "github.com/ArthurBrasa/API-GO/db"
 
-func get(id int64) (todo Todo, err error) {
+func Get(id int64) (todo Todo, err error) {
 	connection, err := db.OpenConnection()
 	if err != nil {
 		return
